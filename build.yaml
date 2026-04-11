@@ -41,4 +41,4 @@ include:
 
   - boards: nice_nano_v2
     shield: settings_reset
-    artifact-name: totem-settings-reset
+    artifact-name: dongle-settings-reset
