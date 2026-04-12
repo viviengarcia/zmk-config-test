@@ -19,26 +19,26 @@
 #
 ---
 include:
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: totem_left
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n # un-comment when building dongle
     artifact-name: totem_L
 
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: totem_right
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n # un-comment when building dongle
     artifact-name: totem_R
 
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: settings_reset
 
 
   # dongle
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: totem_dongle
     # snippet: studio-rpc-usb-uart
     # cmake-args: -DCONFIG_ZMK_STUDIO=y
 
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: settings_reset
     artifact-name: dongle-settings-reset
