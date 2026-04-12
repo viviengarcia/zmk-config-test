@@ -2,6 +2,7 @@
 
 / {
     chosen {
+    	zephyr,display = &oled;
         zmk,kscan = &mock_kscan;
     	zmk,physical-layout = &physical_layout0;
     };
