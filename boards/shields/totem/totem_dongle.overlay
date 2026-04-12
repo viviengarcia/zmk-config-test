@@ -22,7 +22,7 @@
         segment-remap;
         com-invdir;
         // inversion-on;
-        com-sequential;
+        // com-sequential;
         prechargep = <0x22>;
     };
 };
