@@ -37,8 +37,7 @@
     };
 };
 
-/delete-node/ &default_kscan;   // only required if the dongle uses a
-                                // different board than the peripherals
+
 &pinctrl {
     i2c0_default: i2c0_default {
         group1 {
