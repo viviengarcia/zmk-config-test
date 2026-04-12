@@ -51,7 +51,7 @@
         multiplex-ratio = <63>;
         segment-remap;   // Essayez de supprimer cette ligne si l'image est décalée
         com-invdir;      // Essayez de supprimer cette ligne si l'image est à l'envers
-        com-noscan;  // Si l'image est striée, remplacez par 'com-noscan'
+        com-sequential;  // Si l'image est striée, remplacez par 'com-noscan'
         prechargep = <0x22>;
     };
 };
