@@ -64,19 +64,6 @@
 };
 
 
-/{
-    chosen {
-        zmk,kscan = &mock_kscan;
-        zephyr,display = &oled;
-    };
-    mock_kscan: kscan_1 {
-        compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
-        events = <0>;
-    };
-};
-
 / {
     chosen {
     	// zephyr,display = &oled_128x64;
