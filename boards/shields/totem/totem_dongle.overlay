@@ -68,6 +68,7 @@
     chosen {
     	// zephyr,display = &oled_128x64;
         zephyr,display = &oled;
+        zmk,battery = &vbatt;
         zmk,kscan = &mock_kscan;
     	zmk,physical-layout = &physical_layout0;
     };
@@ -77,6 +78,17 @@
         columns = <0>;
         rows = <0>;
         events = <0>;
+    };
+
+    ext-power {
+        compatible = "zmk,ext-power-generic";
+        label = "EXT_POWER";
+        control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
+        init-delay-ms = <50>;
+    };
+
+    vbatt: vbatt {
+        compatible = "zmk,battery-nrf-vddh";
     };
 
     physical_layout0: physical_layout_0 {
